@@ -10,7 +10,8 @@ import {MatTableModule} from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSelectModule } from '@angular/material/select';
-import {MatCheckboxModule} from '@angular/material/checkbox'
+import { MatCheckboxModule } from '@angular/material/checkbox'
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox'
     BrowserAnimationsModule,
     MatCheckboxModule,
     MatSelectModule,
+    ReactiveFormsModule,
     MatSortModule,
     NgbModule,
     HttpClientModule

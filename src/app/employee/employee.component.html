@@ -1,7 +1,7 @@
 <header>
   <nav class="navbar navbar-dark bg-dark">
     <div class="collapse navbar-collapse show" id="navbarText">
-      <ul class="navbar-nav mr-auto resp">
+      <ul class="navbar-nav mr-auto resp" [formGroup] = "filterForm">
         <li class="px-2 child">
             <mat-label class="font-primary">Remove Departments</mat-label>
             <mat-select (selectionChange) = "filterDept($event)" multiple class="background">
@@ -20,8 +20,7 @@
           </div>
         </li>
         <li class="px-2 child">
-          <input class="form-control" type="search" list="names" (change)="filterByName($any($event.target))"
-            (search)="clear()" placeholder="Search by Name">
+          <input class="form-control" type="search" list="names" placeholder="Search by Name" formControlName = "searchedName">
           <datalist id="names">
             <option *ngFor="let name of distinctNames" value="{{name}}">
             <option value="ash">
