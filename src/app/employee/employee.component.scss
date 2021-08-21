@@ -1,0 +1,41 @@
+@import '../../variables.scss';
+
+.title {
+    color: white;
+}
+.child {
+    align-self: center;
+}
+.sec1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@media only screen and (max-width: 700px) {
+    .resp {
+      flex-direction: column-reverse !important;
+      align-content: flex-end !important;
+    }
+    .child {
+        align-self: flex-end;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .resp {
+        flex-wrap: wrap-reverse;
+  }
+}
+.resp {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+table {
+    background-color: white;
+}
+::ng-deep th, td {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+::ng-deep .mat-checkbox-inner-container {
+    background-color: $primaryColor !important;
+}

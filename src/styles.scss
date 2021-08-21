@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import './variables.scss';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    font-family: $fontFamily;
+    background:  $background;
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+/* Importing Bootstrap SCSS file. */
+
+.background {
+    background-color: $primaryColor;
+}
+.font-primary {
+   color: $primaryColor;
+}
