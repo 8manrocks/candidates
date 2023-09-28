@@ -1,6 +1,6 @@
 # Candidates
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
+A dashboard as an HR solution to handle candidates. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
 
 ## Development server
 
